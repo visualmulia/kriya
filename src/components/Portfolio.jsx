@@ -1,29 +1,66 @@
 import React from 'react';
 import './Portfolio.css';
 
-const projects = [
+const showcaseProjects = [
   {
-    id: 'healing-spa',
-    name: 'Healing Spa & Massage Bali',
-    type: 'Home & Hotel Service Spa',
-    location: 'Bali, Indonesia',
-    desc: 'Complete brand redesign and booking integration. We transformed a static, slow template builder page into a premium Balinese Zen experience.',
-    before: {
-      platform: 'Hostinger Website Builder',
-      vibe: 'Static template, kaku, warna kurang serasi.',
-      booking: 'WhatsApp link biasa, tamu harus mengetik manual.',
-      speed: 'Standard'
-    },
-    after: {
-      platform: 'React + Vite (Custom Dev)',
-      vibe: 'Premium Zen dengan warna & tipografi mewah.',
-      booking: 'Interactive Booking Planner + Kalkulator Harga & WhatsApp Form.',
-      speed: 'Memuat kurang dari 1 detik (Lolos Core Web Vitals)'
-    },
-    liveLink: 'https://healingspamassage.vercel.app',
-    tag: 'Case Study #1'
+    id: 1,
+    name: "Healing Spa & Massage Bali",
+    category: "Home & Hotel Spa Booking",
+    status: "Live Demo",
+    isLive: true,
+    color: "#E2F6F0", // Mint
+    emoji: "💆‍♂️",
+    link: "https://healingspamassage.vercel.app"
+  },
+  {
+    id: 2,
+    name: "Ubud Sanctuary Villas",
+    category: "Premium Villa Rentals",
+    status: "In Development",
+    isLive: false,
+    color: "#E8E0FF", // Lilac
+    emoji: "🏡"
+  },
+  {
+    id: 3,
+    name: "Canggu Surf Academy",
+    category: "Surf School & Booking",
+    status: "In Development",
+    isLive: false,
+    color: "#FFEAE5", // Soft Salmon
+    emoji: "🏄‍♂️"
+  },
+  {
+    id: 4,
+    name: "Seminyak Specialty Coffee",
+    category: "Cafe & Table Ordering",
+    status: "In Development",
+    isLive: false,
+    color: "#FFF9E6", // Soft Yellow
+    emoji: "☕"
+  },
+  {
+    id: 5,
+    name: "Sanur Scuba Diving",
+    category: "PADI Course & Guide Booking",
+    status: "In Development",
+    isLive: false,
+    color: "#E1F5FE", // Soft Sky Blue
+    emoji: "🤿"
+  },
+  {
+    id: 6,
+    name: "Bali Premium Cruiser",
+    category: "Yacht & Boat Charter",
+    status: "In Development",
+    isLive: false,
+    color: "#F1F8E9", // Soft Lime
+    emoji: "⛵"
   }
 ];
+
+// Duplicate projects list for seamless scrolling marquee
+const marqueeProjects = [...showcaseProjects, ...showcaseProjects];
 
 const Portfolio = () => {
   return (
@@ -32,93 +69,54 @@ const Portfolio = () => {
         
         <div className="section-header text-center">
           <span className="subtitle">Showcase Portfolio</span>
-          <h2 className="title">Proven Redesign Results</h2>
+          <h2 className="title">Upcoming Project Showcases</h2>
           <p className="description">
-            Explore how we convert generic templates into professional sales machines. We focus on elevating local Bali brands to appeal to high-spending customers.
+            Explore our pipeline of premium digital products. We build custom-crafted, conversion-optimized websites specifically engineered for Bali's finest local brands.
           </p>
         </div>
 
-        <div className="portfolio-showcase">
-          {projects.map(p => (
-            <div key={p.id} className="showcase-container">
+      </div>
+
+      {/* Full-width Marquee Container */}
+      <div className="marquee-container">
+        <div className="marquee-track">
+          {marqueeProjects.map((p, index) => (
+            <div key={`${p.id}-${index}`} className="showcase-card">
+              <div className="card-top">
+                <div 
+                  className="card-emoji-box" 
+                  style={{ backgroundColor: p.color }}
+                >
+                  {p.emoji}
+                </div>
+                <span className={`card-status ${p.isLive ? 'live' : ''}`}>
+                  {p.status}
+                </span>
+              </div>
               
-              {/* Left Column: Project Details */}
-              <div className="showcase-details">
-                <span className="project-tag">{p.tag}</span>
-                <h3 className="project-title">{p.name}</h3>
-                <span className="project-sub">{p.type} &bull; {p.location}</span>
-                <p className="project-desc">{p.desc}</p>
-                
-                <div className="project-actions">
-                  <a href={p.liveLink} target="_blank" rel="noopener noreferrer" className="btn btn-gold">
-                    View Live Redesign Demo
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              <div className="card-body">
+                <h3 className="card-title">{p.name}</h3>
+                <p className="card-category">{p.category}</p>
+              </div>
+
+              <div className="card-bottom">
+                {p.isLive ? (
+                  <a 
+                    href={p.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="card-btn"
+                  >
+                    View Live Demo
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                   </a>
-                </div>
+                ) : (
+                  <span className="card-placeholder-text">⚡ Coming Soon</span>
+                )}
               </div>
-
-              {/* Right Column: Before vs After Neobrutalist Table */}
-              <div className="comparison-card">
-                <h4 className="comparison-title">Redesign Impact</h4>
-                
-                <div className="comparison-columns">
-                  
-                  {/* Before */}
-                  <div className="comparison-col before-col">
-                    <span className="badge badge-before">Before (Hostinger AI)</span>
-                    <ul className="comparison-list">
-                      <li>
-                        <span>Layout Vibe</span>
-                        <strong>{p.before.vibe}</strong>
-                      </li>
-                      <li>
-                        <span>Booking System</span>
-                        <strong>{p.before.booking}</strong>
-                      </li>
-                      <li>
-                        <span>Load Speed</span>
-                        <strong>{p.before.speed}</strong>
-                      </li>
-                      <li>
-                        <span>Platform</span>
-                        <strong>{p.before.platform}</strong>
-                      </li>
-                    </ul>
-                  </div>
-
-                  {/* Divider Line */}
-                  <div className="comparison-divider"></div>
-
-                  {/* After */}
-                  <div className="comparison-col after-col">
-                    <span className="badge badge-after">After (Kriya Redesign)</span>
-                    <ul className="comparison-list">
-                      <li>
-                        <span>Layout Vibe</span>
-                        <strong className="text-light">{p.after.vibe}</strong>
-                      </li>
-                      <li>
-                        <span>Booking System</span>
-                        <strong className="text-light">{p.after.booking}</strong>
-                      </li>
-                      <li>
-                        <span>Load Speed</span>
-                        <strong className="text-light">{p.after.speed}</strong>
-                      </li>
-                      <li>
-                        <span>Platform</span>
-                        <strong className="text-light">{p.after.platform}</strong>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

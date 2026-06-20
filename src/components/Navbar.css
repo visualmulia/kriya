@@ -43,24 +43,25 @@
   text-align: left;
 }
 
-.logo-main {
+.navbar-logo .logo-main {
   font-family: var(--font-body);
   font-size: 1.5rem;
   font-weight: 900;
   letter-spacing: -0.5px;
-  color: var(--primary);
+  color: var(--primary) !important;
   line-height: 1;
 }
 
-.logo-sub {
+.navbar-logo .logo-sub {
   font-family: var(--font-body);
   font-size: 0.65rem;
   font-weight: 800;
   letter-spacing: 1.5px;
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
   line-height: 1;
   margin-top: 1px;
 }
+
 
 .navbar-links {
   display: flex;
@@ -103,11 +104,15 @@
   padding: 10px 24px !important;
   font-size: 0.85rem;
   box-shadow: 3px 3px 0px 0px #191919;
+  color: var(--bg-soft) !important; /* Force highly readable cream text */
+  background-color: var(--primary) !important;
 }
 
 .navbar-links .nav-cta:hover {
   transform: translate(-1px, -1px);
   box-shadow: 4px 4px 0px 0px #191919;
+  color: var(--bg-soft) !important;
+  background-color: var(--primary-light) !important;
 }
 
 .navbar-links a.nav-cta::after {

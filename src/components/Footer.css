@@ -62,14 +62,14 @@
   flex-direction: column;
 }
 
-.logo-main {
+.footer-logo .logo-main {
   font-size: 1.5rem;
   font-weight: 900;
   color: var(--white);
   letter-spacing: -0.5px;
 }
 
-.logo-sub {
+.footer-logo .logo-sub {
   font-size: 0.7rem;
   font-weight: 700;
   color: var(--accent-mint);
