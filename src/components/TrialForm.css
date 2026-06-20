@@ -1,0 +1,156 @@
+/* TrialForm Component Styling - Kriya Studio */
+
+.trial-section {
+  background-color: var(--bg-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.trial-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Column: Form Card */
+.trial-form-container {
+  background-color: var(--bg-panel);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  text-align: left;
+  box-shadow: var(--shadow-lg);
+}
+
+.form-title {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.form-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.trial-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trial-form label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.trial-form input {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  background-color: rgba(0, 0, 0, 0.25);
+  color: var(--text-white);
+  transition: var(--transition-fast);
+  width: 100%;
+  outline: none;
+}
+
+.trial-form input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.2);
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 10px;
+  padding: 16px;
+  font-size: 1.05rem;
+}
+
+/* Right Column: Pitch text */
+.trial-pitch {
+  text-align: left;
+}
+
+.pitch-tag {
+  color: var(--accent-gold);
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.trial-pitch h2 {
+  font-size: 3rem;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 36px;
+}
+
+.pitch-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pitch-bullet {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.bullet-icon {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 1.25rem;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.pitch-bullet h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.pitch-bullet p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .trial-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .trial-form-container {
+    padding: 30px 20px;
+  }
+  
+  .trial-pitch h2 {
+    font-size: 2.2rem;
+  }
+}
