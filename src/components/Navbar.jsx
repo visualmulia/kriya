@@ -7,7 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 40) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -27,13 +27,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled glass' : ''} ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
       <div className="container navbar-container">
         <a href="#home" className="navbar-logo" onClick={closeMobileMenu}>
-          <span className="logo-icon">⚡</span>
+          <span className="logo-icon">🌿</span>
           <div className="logo-text">
-            <span className="logo-main">KRIYA</span>
-            <span className="logo-sub">WEB STUDIO</span>
+            <span className="logo-main">kriya</span>
+            <span className="logo-sub">web studio</span>
           </div>
         </a>
 
@@ -51,7 +51,7 @@ const Navbar = () => {
           <li><a href="#portfolio" onClick={closeMobileMenu}>Showcase</a></li>
           <li><a href="#pricing" onClick={closeMobileMenu}>Pricing</a></li>
           <li className="nav-btn-container">
-            <a href="#trial" className="btn btn-primary nav-cta" onClick={closeMobileMenu}>
+            <a href="#trial" className="btn btn-primary nav-cta animate-pulse-glow" onClick={closeMobileMenu}>
               Start Free Trial
             </a>
           </li>

@@ -1,8 +1,8 @@
-/* TrialForm Component Styling - Kriya Studio */
+/* TrialForm Component Styling - Linktree Style */
 
 .trial-section {
-  background-color: var(--bg-dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  background-color: var(--bg-soft);
+  border-bottom: var(--border-thick);
 }
 
 .trial-grid {
@@ -14,25 +14,27 @@
 
 /* Left Column: Form Card */
 .trial-form-container {
-  background-color: var(--bg-panel);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: var(--bg-white);
+  border: var(--border-thick);
   border-radius: var(--radius-lg);
   padding: 48px;
   text-align: left;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-flat-lg);
 }
 
 .form-title {
   font-family: var(--font-body);
   font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--white);
+  font-weight: 900;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
   margin-bottom: 8px;
 }
 
 .form-subtitle {
   font-size: 0.95rem;
   color: var(--text-muted);
+  font-weight: 500;
   margin-bottom: 32px;
 }
 
@@ -45,8 +47,8 @@
 .trial-form label {
   font-family: var(--font-body);
   font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--accent-gold);
+  font-weight: 800;
+  color: var(--text-dark);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 8px;
@@ -58,17 +60,19 @@
   font-size: 0.95rem;
   padding: 12px 16px;
   border-radius: var(--radius-sm);
-  border: 1.5px solid rgba(255, 255, 255, 0.08);
-  background-color: rgba(0, 0, 0, 0.25);
-  color: var(--text-white);
+  border: var(--border-thick);
+  background-color: var(--bg-soft);
+  color: var(--text-dark);
   transition: var(--transition-fast);
   width: 100%;
   outline: none;
+  font-weight: 700;
 }
 
 .trial-form input:focus {
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 12px rgba(0, 242, 254, 0.2);
+  background-color: var(--bg-white);
+  box-shadow: 3px 3px 0px 0px var(--text-dark);
+  transform: translate(-1px, -1px);
 }
 
 .btn-submit {
@@ -84,9 +88,9 @@
 }
 
 .pitch-tag {
-  color: var(--accent-gold);
+  color: var(--primary);
   font-family: var(--font-body);
-  font-weight: 800;
+  font-weight: 900;
   font-size: 0.85rem;
   letter-spacing: 2px;
   margin-bottom: 16px;
@@ -95,9 +99,11 @@
 
 .trial-pitch h2 {
   font-size: 3rem;
-  color: var(--white);
+  color: var(--text-dark);
   line-height: 1.15;
   margin-bottom: 36px;
+  font-weight: 900;
+  letter-spacing: -1px;
 }
 
 .pitch-bullets {
@@ -113,8 +119,8 @@
 }
 
 .bullet-icon {
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: var(--bg-white);
+  border: var(--border-thick);
   font-size: 1.25rem;
   width: 44px;
   height: 44px;
@@ -123,13 +129,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  box-shadow: 2px 2px 0px 0px var(--text-dark);
 }
 
 .pitch-bullet h4 {
   font-family: var(--font-body);
   font-size: 1rem;
-  font-weight: 800;
-  color: var(--white);
+  font-weight: 900;
+  color: var(--text-dark);
   margin-bottom: 4px;
 }
 
@@ -137,6 +144,7 @@
   font-size: 0.9rem;
   color: var(--text-muted);
   line-height: 1.45;
+  font-weight: 500;
 }
 
 /* Responsive */

@@ -9,13 +9,13 @@ const plans = [
     target: 'Perfect for local spas, rentals & retail shops',
     features: [
       '⚡ 14-Day Free Live Trial First',
-      '💬 Custom WhatsApp Booking Planner',
+      '💬 WhatsApp Booking Planner',
       '📱 100% Mobile-Responsive Layout',
       '🌍 Single Language (EN or ID)',
       '🌐 Subdomain Hosting (brand.kriya.web.id)',
-      '🛠️ Fully Managed Maintenance & Support'
+      '🛠️ Managed Maintenance & Support'
     ],
-    buyout: 'Buy-out license options: IDR 1.5M (self-host) or IDR 2.5M (fully managed)',
+    buyout: 'License buyout options: IDR 1.5M (self-host) or IDR 2.5M (managed)',
     cta: 'Start Free Trial',
     accent: false
   },
@@ -23,17 +23,17 @@ const plans = [
     name: 'Premium Global',
     price: 'IDR 450K',
     period: '/ Month',
-    target: 'Best for expat brands, beach clubs & luxury villas',
+    target: 'Best for expat brands, villas & restaurants',
     features: [
       '⚡ 14-Day Free Live Trial First',
-      '💬 Custom WhatsApp Booking Planner',
+      '💬 WhatsApp Booking Planner',
       '✨ Multi-language Setup (ID / EN / RU)',
-      '📅 Advanced Booking Slots Calendar',
+      '📅 Booking Slots Calendar Planner',
       '🔗 Custom Domain Setup (brand.id / .com)',
       '📊 Google Analytics & FB Pixel Setup',
       '⭐ Priority 24/7 Developer Support'
     ],
-    buyout: 'Buy-out license option: IDR 3.9M (USD 249)',
+    buyout: 'License buyout option: IDR 3.9M (USD 249)',
     cta: 'Start Free Trial',
     accent: true
   },
@@ -43,7 +43,7 @@ const plans = [
     period: 'Contract',
     target: 'Best for digital nomads & custom SaaS systems',
     features: [
-      '💻 Tailored React / Next.js Frameworks',
+      '💻 Custom React / Next.js Frameworks',
       '💳 Payment Gateway (Midtrans/Stripe)',
       '🗄️ Custom Database & API Integrations',
       '🎨 100% Bespoke Creative UI/UX Design',
@@ -64,16 +64,16 @@ const Pricing = () => {
         
         <div className="section-header text-center">
           <span className="subtitle">Clear Pricing</span>
-          <h2 className="title">Simple Packages, Massive Value</h2>
+          <h2 className="title">Select Your Studio Plan</h2>
           <p className="description">
-            Choose the fit for your business scale. No hidden fees. Remember, both monthly plans start with a **14-day free live trial**!
+            Choose the fit for your business scale. No hidden fees. Both monthly plans start with a **14-day free live trial**!
           </p>
         </div>
 
         <div className="pricing-grid">
           {plans.map((p, idx) => (
-            <div key={idx} className={`pricing-card glass ${p.accent ? 'featured' : ''}`}>
-              {p.accent && <span className="featured-ribbon">Most Popular in Bali</span>}
+            <div key={idx} className={`pricing-card ${p.accent ? 'featured' : ''}`}>
+              {p.accent && <span className="featured-ribbon">Most Popular</span>}
               
               <div className="plan-header">
                 <h3>{p.name}</h3>

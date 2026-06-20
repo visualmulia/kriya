@@ -51,9 +51,9 @@ Please let me know when the premium website draft is ready. Thank you!`;
         <div className="trial-grid">
           
           {/* Left Column: Form Card */}
-          <div className="trial-form-container glass">
-            <h3 className="form-title">Claim Your Free Redesign Demo</h3>
-            <p className="form-subtitle">Fill in the details below. We will build your draft website in 3 days.</p>
+          <div className="trial-form-container">
+            <h3 className="form-title">Claim Your Free Website Draft</h3>
+            <p className="form-subtitle">Submit your maps link. We will build your free trial design in 3 days.</p>
             
             <form onSubmit={handleSubmit} className="trial-form">
               <div className="form-group">
@@ -108,7 +108,7 @@ Please let me know when the premium website draft is ready. Thank you!`;
                 />
               </div>
 
-              <button type="submit" className="btn btn-primary btn-submit pulse-glow-hover">
+              <button type="submit" className="btn btn-primary btn-submit">
                 Apply for Free Redesign Draft 🚀
               </button>
             </form>
@@ -124,7 +124,7 @@ Please let me know when the premium website draft is ready. Thank you!`;
                 <span className="bullet-icon">💳</span>
                 <div>
                   <h4>No Credit Card Required</h4>
-                  <p>You don't need to put in billing details. We don't ask you to pay before seeing real results.</p>
+                  <p>No billing details needed. We don't ask you to pay before seeing real results in your hands.</p>
                 </div>
               </div>
 
@@ -132,14 +132,14 @@ Please let me know when the premium website draft is ready. Thank you!`;
                 <span className="bullet-icon">⏱️</span>
                 <div>
                   <h4>Ready in 3 Days</h4>
-                  <p>Our Bali-based design team works fast to create a stunning, fully-functional draft customized for your brand.</p>
+                  <p>Our team works fast to create a stunning, fully functional design customized for your brand.</p>
                 </div>
               </div>
 
               <div className="pitch-bullet">
                 <span className="bullet-icon">📱</span>
                 <div>
-                  <h4>Booking planner included</h4>
+                  <h4>Booking Planner Included</h4>
                   <p>Your free trial landing page includes a fully working WhatsApp pricing calculator and scheduler tool.</p>
                 </div>
               </div>
@@ -147,8 +147,8 @@ Please let me know when the premium website draft is ready. Thank you!`;
               <div className="pitch-bullet">
                 <span className="bullet-icon">❌</span>
                 <div>
-                  <h4>No obligations</h4>
-                  <p>If you don't like the website after 14 days, you can walk away. The draft will be quietly taken down. No strings attached.</p>
+                  <h4>No Obligations</h4>
+                  <p>If you don't want to continue after 14 days, you can walk away. The website draft will be quietly taken down.</p>
                 </div>
               </div>
             </div>

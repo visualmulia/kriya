@@ -1,8 +1,8 @@
-/* Pricing Component Styling - Kriya Studio */
+/* Pricing Component Styling - Linktree Style */
 
 .pricing-section {
-  background-color: var(--bg-dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  background-color: var(--bg-soft);
+  border-bottom: var(--border-thick);
 }
 
 .pricing-grid {
@@ -13,27 +13,31 @@
 }
 
 .pricing-card {
-  background-color: var(--bg-panel);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: var(--bg-white);
+  border: var(--border-thick);
   border-radius: var(--radius-lg);
   padding: 40px;
   text-align: left;
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: var(--transition-normal);
+  box-shadow: var(--shadow-flat);
+  transition: var(--transition-fast);
 }
 
 .pricing-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255, 255, 255, 0.15);
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0px 0px #191919;
 }
 
-/* Featured Card with Cyan Glow */
+/* Featured Card (Forest Green Background) */
 .pricing-card.featured {
-  border: 2px solid var(--accent-cyan);
-  background-color: var(--bg-panel-light);
-  box-shadow: var(--shadow-lg), 0 0 25px rgba(0, 242, 254, 0.15);
+  background-color: var(--primary);
+  color: var(--bg-soft);
+}
+
+.pricing-card.featured:hover {
+  box-shadow: 7px 7px 0px 0px #191919;
 }
 
 .featured-ribbon {
@@ -42,7 +46,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--accent-gold);
-  color: var(--bg-dark);
+  color: var(--text-dark);
   font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 800;
@@ -50,21 +54,33 @@
   padding: 4px 16px;
   border-radius: var(--radius-full);
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border: var(--border-thick);
+  box-shadow: 2px 2px 0px 0px #191919;
 }
 
 .plan-header h3 {
   font-family: var(--font-body);
   font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--white);
+  font-weight: 900;
+  color: var(--text-dark);
   margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.featured .plan-header h3 {
+  color: var(--bg-soft);
 }
 
 .plan-target {
   font-size: 0.85rem;
   color: var(--text-muted);
+  font-weight: 600;
   margin-bottom: 24px;
+}
+
+.featured .plan-target {
+  color: var(--bg-soft);
+  opacity: 0.7;
 }
 
 .plan-price-box {
@@ -78,25 +94,34 @@
   font-family: var(--font-body);
   font-size: 2.5rem;
   font-weight: 900;
-  color: var(--white);
+  color: var(--text-dark);
   line-height: 1;
+  letter-spacing: -1px;
 }
 
 .featured .plan-price {
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--bg-soft);
 }
 
 .plan-period {
   font-size: 1rem;
   color: var(--text-muted);
+  font-weight: 600;
+}
+
+.featured .plan-period {
+  color: var(--bg-soft);
+  opacity: 0.8;
 }
 
 .plan-divider {
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.06);
+  height: 2px;
+  background-color: rgba(25, 25, 25, 0.08);
   margin: 24px 0;
+}
+
+.featured .plan-divider {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .plan-features {
@@ -109,21 +134,45 @@
 }
 
 .plan-features li {
-  font-size: 0.9rem;
-  color: var(--text-white);
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  font-weight: 600;
   line-height: 1.4;
 }
 
+.featured .plan-features li {
+  color: var(--bg-soft);
+}
+
 .plan-buyout {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
-  line-height: 1.4;
+  line-height: 1.45;
   margin-bottom: 28px;
   font-style: italic;
+  font-weight: 600;
+}
+
+.featured .plan-buyout {
+  color: var(--bg-soft);
+  opacity: 0.8;
 }
 
 .plan-btn {
   width: 100%;
+}
+
+.featured .plan-btn {
+  background-color: var(--bg-soft) !important;
+  color: var(--text-dark) !important;
+  border-color: var(--text-dark) !important;
+  box-shadow: 4px 4px 0px 0px #191919 !important;
+}
+
+.featured .plan-btn:hover {
+  background-color: var(--bg-white) !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 6px 6px 0px 0px #191919 !important;
 }
 
 /* Responsive */

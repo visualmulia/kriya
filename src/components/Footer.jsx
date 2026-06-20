@@ -13,19 +13,19 @@ const Footer = () => {
           {/* Column 1: Studio info */}
           <div className="footer-col brand-col">
             <a href="#home" className="footer-logo">
-              <span className="logo-icon">⚡</span>
+              <span className="logo-icon">🌿</span>
               <div className="logo-text">
                 <span className="logo-main">KRIYA</span>
                 <span className="logo-sub">WEB STUDIO</span>
               </div>
             </a>
             <p className="brand-desc">
-              We design and develop premium, high-speed websites and interactive booking planners that accelerate local business conversions in Bali.
+              We build high-speed, beautiful landing pages and interactive booking planners that connect Bali's finest local businesses with global travelers.
             </p>
             <div className="founder-badge">
               <span className="founder-avatar">👨‍💻</span>
-              <div>
-                <h4>Lead Developer</h4>
+              <div className="founder-info">
+                <h4>Lead Engineer</h4>
                 <p>Designed by <a href="https://ardyan.web.id" target="_blank" rel="noopener noreferrer" className="founder-link">Ardyan</a></p>
               </div>
             </div>
@@ -46,12 +46,12 @@ const Footer = () => {
           {/* Column 3: Contact info */}
           <div className="footer-col contact-col">
             <h3 className="footer-col-title">Contact Studio</h3>
-            <p className="contact-desc">Have questions or want to discuss a custom project? Reach out to us:</p>
+            <p className="contact-desc">Have questions or want to discuss a custom design project? Get in touch:</p>
             
             <div className="contact-items">
               <a href="https://wa.me/62881037342111" target="_blank" rel="noopener noreferrer" className="contact-item">
                 <span className="contact-icon">💬</span>
-                <div>
+                <div className="contact-info">
                   <h4>WhatsApp (24/7)</h4>
                   <p>+62 881-0373-42111</p>
                 </div>
@@ -59,7 +59,7 @@ const Footer = () => {
               
               <a href="mailto:hello@kriya.web.id" className="contact-item">
                 <span className="contact-icon">✉️</span>
-                <div>
+                <div className="contact-info">
                   <h4>Email Address</h4>
                   <p>hello@kriya.web.id</p>
                 </div>

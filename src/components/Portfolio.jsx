@@ -1,50 +1,48 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Portfolio.css';
 
 const projects = [
   {
     id: 'healing-spa',
     name: 'Healing Spa & Massage Bali',
-    type: 'Home Service Spa & Wellness',
+    type: 'Home & Hotel Service Spa',
     location: 'Bali, Indonesia',
-    desc: 'Complete brand redesign and interactive booking system implementation. We replaced a generic website template with a luxury Balinese zen experience.',
+    desc: 'Complete brand redesign and booking integration. We transformed a static, slow template builder page into a premium Balinese Zen experience.',
     before: {
-      platform: 'Hostinger AI Builder',
-      vibe: 'Static, flat template, plain green colors.',
-      booking: 'Static WhatsApp link - guests must write everything manually.',
-      speed: 'Average'
+      platform: 'Hostinger Website Builder',
+      vibe: 'Static template, kaku, warna kurang serasi.',
+      booking: 'WhatsApp link biasa, tamu harus mengetik manual.',
+      speed: 'Standard'
     },
     after: {
-      platform: 'React + Vite (Custom)',
-      vibe: 'Luxury Zen design with high-end typography.',
-      booking: 'Interactive Planner with live pricing calculator & formatted checkout.',
-      speed: 'Under 1 second (100% Core Web Vitals)'
+      platform: 'React + Vite (Custom Dev)',
+      vibe: 'Premium Zen dengan warna & tipografi mewah.',
+      booking: 'Interactive Booking Planner + Kalkulator Harga & WhatsApp Form.',
+      speed: 'Memuat kurang dari 1 detik (Lolos Core Web Vitals)'
     },
     liveLink: 'https://healingspamassage.vercel.app',
-    tag: 'Featured Redesign'
+    tag: 'Case Study #1'
   }
 ];
 
 const Portfolio = () => {
-  const [activeProject, setActiveProject] = useState(projects[0]);
-
   return (
     <section id="portfolio" className="section portfolio-section">
       <div className="container">
         
         <div className="section-header text-center">
-          <span className="subtitle">Our Showcase</span>
-          <h2 className="title">Proven Results in Bali</h2>
+          <span className="subtitle">Showcase Portfolio</span>
+          <h2 className="title">Proven Redesign Results</h2>
           <p className="description">
-            Explore our latest website transformations. We focus on elevating local brands into premium experiences that convert traffic into revenue.
+            Explore how we convert generic templates into professional sales machines. We focus on elevating local Bali brands to appeal to high-spending customers.
           </p>
         </div>
 
         <div className="portfolio-showcase">
           {projects.map(p => (
-            <div key={p.id} className="showcase-container glass">
+            <div key={p.id} className="showcase-container">
               
-              {/* Project Intro */}
+              {/* Left Column: Project Details */}
               <div className="showcase-details">
                 <span className="project-tag">{p.tag}</span>
                 <h3 className="project-title">{p.name}</h3>
@@ -53,21 +51,21 @@ const Portfolio = () => {
                 
                 <div className="project-actions">
                   <a href={p.liveLink} target="_blank" rel="noopener noreferrer" className="btn btn-gold">
-                    View Live Website Demo
+                    View Live Redesign Demo
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                   </a>
                 </div>
               </div>
 
-              {/* Before vs After Grid */}
+              {/* Right Column: Before vs After Neobrutalist Table */}
               <div className="comparison-card">
-                <h4 className="comparison-title">The Transformation</h4>
+                <h4 className="comparison-title">Redesign Impact</h4>
                 
                 <div className="comparison-columns">
                   
                   {/* Before */}
                   <div className="comparison-col before-col">
-                    <span className="badge badge-before">Before (Old Web)</span>
+                    <span className="badge badge-before">Before (Hostinger AI)</span>
                     <ul className="comparison-list">
                       <li>
                         <span>Layout Vibe</span>

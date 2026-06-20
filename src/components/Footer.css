@@ -1,10 +1,10 @@
-/* Footer Component Styling - Kriya Studio */
+/* Footer Component Styling - Kriya Studio (Linktree Forest Green theme) */
 
 .footer-section {
-  background-color: #050608;
-  color: var(--text-muted);
-  padding: 80px 0 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: var(--primary);
+  color: var(--bg-soft);
+  padding: 80px 0 40px;
+  border-top: var(--border-thick);
 }
 
 .footer-grid {
@@ -36,11 +36,11 @@
 
 .footer-col-title {
   font-family: var(--font-body);
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 800;
   color: var(--accent-gold);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   margin-bottom: 24px;
 }
 
@@ -48,37 +48,69 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 20px;
+  font-family: var(--font-body);
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-main {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -0.5px;
+}
+
+.logo-sub {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent-mint);
+  letter-spacing: 1px;
 }
 
 .brand-desc {
   font-size: 0.9rem;
   line-height: 1.6;
-  color: var(--text-muted);
+  color: var(--accent-mint);
   margin-bottom: 24px;
+  opacity: 0.85;
 }
 
 .founder-badge {
   display: flex;
   align-items: center;
   gap: 12px;
-  background-color: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 10px 16px;
-  border-radius: var(--radius-sm);
-  max-width: 250px;
+  background-color: var(--primary-dark);
+  border: var(--border-thick);
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  max-width: 270px;
+  box-shadow: 4px 4px 0px 0px var(--text-dark);
 }
 
 .founder-avatar {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+
+.founder-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .founder-badge h4 {
   font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 800;
-  color: var(--text-muted);
+  color: var(--accent-gold);
   text-transform: uppercase;
 }
 
@@ -89,9 +121,9 @@
 }
 
 .founder-link {
-  color: var(--accent-cyan);
+  color: var(--accent-mint);
   text-decoration: underline;
-  transition: var(--transition-fast);
+  font-weight: 700;
 }
 
 .founder-link:hover {
@@ -108,19 +140,22 @@
 
 .footer-links a {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: var(--bg-soft);
+  font-weight: 600;
   transition: var(--transition-fast);
 }
 
 .footer-links a:hover {
-  color: var(--accent-cyan);
+  color: var(--accent-mint);
   padding-left: 6px;
 }
 
 /* Contact Column */
 .contact-desc {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: var(--accent-mint);
   margin-bottom: 20px;
+  opacity: 0.85;
 }
 
 .contact-items {
@@ -131,47 +166,55 @@
 
 .contact-item {
   display: flex;
-  gap: 12px;
-  align-items: flex-start;
+  gap: 14px;
+  align-items: center;
+  background-color: var(--bg-white);
+  border: var(--border-thick);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  box-shadow: 4px 4px 0px 0px var(--text-dark);
   transition: var(--transition-fast);
 }
 
 .contact-item:hover {
-  transform: translateY(-2px);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px var(--text-dark);
+}
+
+.contact-item:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-flat-hover);
 }
 
 .contact-icon {
-  font-size: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  width: 36px;
-  height: 36px;
+  font-size: 1.3rem;
+}
+
+.contact-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  flex-direction: column;
+  text-align: left;
 }
 
 .contact-item h4 {
   font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 800;
-  color: var(--accent-gold);
+  color: var(--primary);
   text-transform: uppercase;
-  margin-bottom: 2px;
 }
 
 .contact-item p {
-  font-size: 0.85rem;
-  color: var(--white);
-  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 700;
 }
 
 /* Bottom Bar */
 .footer-divider {
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.05);
-  margin-bottom: 24px;
+  height: 2px;
+  background-color: var(--text-dark);
+  margin-bottom: 30px;
 }
 
 .bottom-content {
@@ -180,8 +223,9 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-size: 0.9rem;
+  color: var(--accent-mint);
+  opacity: 0.85;
 }
 
 @media (max-width: 768px) {

@@ -1,22 +1,21 @@
-/* Kriya Web Studio - Dark Mode Luxury Styling Foundation */
+/* Kriya Web Studio - Linktree Organic Bold Style Foundation */
 
 :root {
-  /* Colors */
-  --bg-dark: #07080B;       /* Deep space charcoal */
-  --bg-panel: #11141B;      /* Dark slate container */
-  --bg-panel-light: #1A1E29; /* Highlighted container */
+  /* Color Palette (Linktree & Balinese Zen fusion) */
+  --primary: #1E3F20;         /* Deep Forest Green */
+  --primary-light: #2A542C;   /* Light Sage Green */
+  --primary-dark: #0D2111;    /* Spruce Deep Black */
+  --accent: #E8E0FF;          /* Pastel Lilac */
+  --accent-mint: #E2F6F0;     /* Soft Mint */
+  --accent-gold: #C5A880;     /* Balinese Gold */
   
-  --accent-cyan: #00F2FE;   /* Electric Neon Cyan */
-  --accent-blue: #4FACFE;   /* Digital Ocean Blue */
-  --accent-gold: #C5A880;   /* Balinese Sand Gold */
-  --accent-gold-hover: #DFD3C3;
-  --accent-gold-dark: #A98C64;
-  
-  --text-white: #F5F6F8;
-  --text-muted: #8F9CAE;
+  --bg-soft: #F6F4F0;         /* Warm Linen Cream */
+  --bg-white: #FCFBF9;        /* Alabaster White */
+  --text-dark: #191919;       /* Jet Black */
+  --text-muted: #5F6862;      /* Slate Olive Muted */
   --white: #FFFFFF;
   
-  /* Fonts */
+  /* Typography */
   --font-title: 'Playfair Display', serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
   
@@ -27,22 +26,15 @@
   --radius-lg: 24px;
   --radius-full: 9999px;
   
-  /* Shadows & Glassmorphism */
-  --shadow-sm: 0 4px 6px -1px rgba(0, 242, 254, 0.05);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 242, 254, 0.03);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 10px 10px -5px rgba(0, 242, 254, 0.05);
-  
-  --glow-cyan: 0 0 15px rgba(0, 242, 254, 0.35);
-  --glow-gold: 0 0 15px rgba(197, 168, 128, 0.25);
-  
-  --glass-bg: rgba(17, 20, 27, 0.75);
-  --glass-border: rgba(255, 255, 255, 0.06);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  /* Neobrutalist Borders & Shadows */
+  --border-thick: 2px solid #191919;
+  --shadow-flat: 4px 4px 0px 0px #191919;
+  --shadow-flat-lg: 8px 8px 0px 0px #191919;
+  --shadow-flat-hover: 1px 1px 0px 0px #191919;
   
   /* Transitions */
-  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Reset and Global Styles */
@@ -59,20 +51,19 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--bg-dark);
-  color: var(--text-white);
+  background-color: var(--bg-soft);
+  color: var(--text-dark);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 /* Typography Presets */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-title);
-  color: var(--text-white);
-  font-weight: 600;
-  line-height: 1.25;
+  font-family: var(--font-body); /* Bold geometric headers, Linktree uses sans-serif */
+  color: var(--text-dark);
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 p {
@@ -109,115 +100,108 @@ a {
   text-align: center;
 }
 
-.highlight-cyan {
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.highlight-green {
+  color: var(--primary);
 }
 
 .highlight-gold {
   color: var(--accent-gold);
   font-family: var(--font-title);
   font-style: italic;
+  font-weight: 500;
 }
 
-/* Buttons */
+/* Neobrutalist Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 16px 36px;
   font-family: var(--font-body);
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: var(--radius-full);
-  border: none;
+  border: var(--border-thick);
   cursor: pointer;
-  transition: var(--transition-normal);
+  transition: var(--transition-fast);
   letter-spacing: 0.5px;
   gap: 8px;
   white-space: nowrap;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
-  color: var(--bg-dark);
+  background-color: var(--primary);
+  color: var(--bg-soft);
+  box-shadow: var(--shadow-flat);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 242, 254, 0.4);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #191919;
+}
+
+.btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-flat-hover);
 }
 
 .btn-gold {
   background-color: var(--accent-gold);
-  color: var(--bg-dark);
+  color: var(--text-dark);
+  box-shadow: var(--shadow-flat);
 }
 
 .btn-gold:hover {
-  background-color: var(--accent-gold-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(197, 168, 128, 0.35);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #191919;
 }
 
 .btn-secondary {
-  background-color: transparent;
-  color: var(--text-white);
-  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  box-shadow: var(--shadow-flat);
 }
 
 .btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #191919;
+  background-color: var(--bg-soft);
 }
 
-.btn-outline-gold {
-  background-color: transparent;
-  color: var(--accent-gold);
-  border: 1.5px solid var(--accent-gold);
+.btn-secondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-flat-hover);
 }
 
-.btn-outline-gold:hover {
-  background-color: var(--accent-gold);
-  color: var(--bg-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--glow-gold);
-}
-
-/* Glassmorphic Panel */
+/* Glassmorphic Panel (Neobrutalism themed) */
 .glass {
-  background: var(--glass-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--glass-border);
-  box-shadow: var(--glass-shadow);
+  background: var(--bg-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-flat);
 }
 
 /* Section Header Utility */
 .section-header {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto 60px;
 }
 
 .section-header .subtitle {
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary);
   text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-weight: 900;
+  letter-spacing: 2px;
   font-size: 0.85rem;
   margin-bottom: 16px;
   display: block;
 }
 
 .section-header .title {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-bottom: 20px;
-  color: var(--white);
+  color: var(--text-dark);
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
 @media (max-width: 768px) {
@@ -228,20 +212,20 @@ a {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes pulse-glow {
-  0% { box-shadow: 0 0 10px rgba(0, 242, 254, 0.2); }
-  50% { box-shadow: 0 0 20px rgba(0, 242, 254, 0.45); }
-  100% { box-shadow: 0 0 10px rgba(0, 242, 254, 0.2); }
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.8s ease forwards;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
-.pulse-glow-hover:hover {
-  animation: pulse-glow 2s infinite;
+.animate-float {
+  animation: float 5s ease-in-out infinite;
 }

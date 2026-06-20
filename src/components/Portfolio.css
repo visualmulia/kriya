@@ -1,8 +1,8 @@
-/* Portfolio Component Styling - Kriya Studio */
+/* Portfolio Component Styling - Linktree Style */
 
 .portfolio-section {
-  background-color: var(--bg-dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  background-color: var(--bg-soft);
+  border-bottom: var(--border-thick);
 }
 
 .portfolio-showcase {
@@ -15,12 +15,12 @@
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 50px;
-  background-color: var(--bg-panel);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: var(--bg-white);
+  border: var(--border-thick);
   border-radius: var(--radius-lg);
   padding: 50px;
   align-items: center;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-flat-lg);
 }
 
 /* Left Column: Project Details */
@@ -32,30 +32,33 @@
 }
 
 .project-tag {
-  background-color: rgba(197, 168, 128, 0.15);
-  color: var(--accent-gold);
-  border: 1.5px solid var(--accent-gold);
+  background-color: var(--accent-mint);
+  color: var(--primary);
+  border: var(--border-thick);
   padding: 4px 14px;
   font-family: var(--font-body);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   border-radius: var(--radius-full);
   margin-bottom: 20px;
+  box-shadow: 2px 2px 0px 0px #191919;
 }
 
 .project-title {
-  font-family: var(--font-title);
+  font-family: var(--font-body);
   font-size: 2.2rem;
-  color: var(--white);
+  color: var(--text-dark);
+  font-weight: 900;
+  letter-spacing: -0.8px;
   margin-bottom: 8px;
 }
 
 .project-sub {
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: var(--accent-gold);
-  font-weight: 600;
+  color: var(--accent-gold-dark);
+  font-weight: 800;
   margin-bottom: 24px;
   display: block;
 }
@@ -65,35 +68,36 @@
   color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 40px;
+  font-weight: 500;
 }
 
 .project-actions {
   display: flex;
 }
 
-/* Right Column: Before vs After Card */
+/* Right Column: Before vs After Neobrutalist Table */
 .comparison-card {
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: var(--bg-soft);
+  border: var(--border-thick);
   border-radius: var(--radius-md);
   padding: 30px;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+  box-shadow: var(--shadow-flat);
 }
 
 .comparison-title {
   font-family: var(--font-body);
   font-size: 0.95rem;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--accent-gold);
+  color: var(--text-dark);
   margin-bottom: 24px;
   text-align: center;
 }
 
 .comparison-columns {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   position: relative;
 }
 
@@ -108,7 +112,7 @@
 .badge {
   font-family: var(--font-body);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
@@ -116,17 +120,18 @@
   align-self: flex-start;
   margin-bottom: 8px;
   letter-spacing: 0.5px;
+  border: 1.5px solid #191919;
 }
 
 .badge-before {
-  background-color: rgba(255, 95, 86, 0.15);
+  background-color: #FFEAE5;
   color: #FF5F56;
 }
 
 .badge-after {
-  background-color: rgba(0, 242, 254, 0.15);
-  color: var(--accent-cyan);
-  box-shadow: 0 0 10px rgba(0, 242, 254, 0.1);
+  background-color: var(--accent-mint);
+  color: var(--primary);
+  box-shadow: 2px 2px 0px 0px #191919;
 }
 
 .comparison-list {
@@ -146,25 +151,26 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   color: var(--text-muted);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.5px;
 }
 
 .comparison-list strong {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.comparison-list .text-light {
-  color: var(--white);
+  color: var(--text-muted);
+  line-height: 1.45;
   font-weight: 600;
 }
 
+.comparison-list .text-light {
+  color: var(--text-dark);
+  font-weight: 800;
+}
+
 .comparison-divider {
-  width: 1px;
-  background-color: rgba(255, 255, 255, 0.08);
+  width: 2px;
+  background-color: #191919;
+  opacity: 0.2;
 }
 
 /* Responsive */
