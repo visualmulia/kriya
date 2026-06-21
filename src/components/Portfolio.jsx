@@ -8,21 +8,32 @@ const showcaseProjects = [
     category: "Home & Hotel Spa Booking",
     status: "Live Demo",
     isLive: true,
-    color: "#E2F6F0", // Mint
+    color: "#E8E0FF", // Lilac
     emoji: "💆‍♂️",
     link: "https://healingspamassage.vercel.app"
   },
   {
     id: 2,
-    name: "Ubud Sanctuary Villas",
-    category: "Premium Villa Rentals",
-    status: "In Development",
-    isLive: false,
-    color: "#E8E0FF", // Lilac
-    emoji: "🏡"
+    name: "Ufresh Family Spa Denpasar",
+    category: "Tropical Wellness & Day Spa",
+    status: "Live Demo",
+    isLive: true,
+    color: "#E2F6F0", // Soft Sage/Mint
+    emoji: "🌿",
+    link: "https://ufreshspa.vercel.app"
   },
   {
     id: 3,
+    name: "Bali Private Driver (FM Prabowo)",
+    category: "Travel Charter & Day Tour",
+    status: "Live Demo",
+    isLive: true,
+    color: "#E1F5FE", // Soft Sky Blue
+    emoji: "🚗",
+    link: "https://balidriver-omega.vercel.app"
+  },
+  {
+    id: 4,
     name: "Canggu Surf Academy",
     category: "Surf School & Booking",
     status: "In Development",
@@ -31,31 +42,22 @@ const showcaseProjects = [
     emoji: "🏄‍♂️"
   },
   {
-    id: 4,
+    id: 5,
+    name: "Ubud Sanctuary Villas",
+    category: "Premium Villa Rentals",
+    status: "In Development",
+    isLive: false,
+    color: "#FFF9E6", // Soft Yellow
+    emoji: "🏡"
+  },
+  {
+    id: 6,
     name: "Seminyak Specialty Coffee",
     category: "Cafe & Table Ordering",
     status: "In Development",
     isLive: false,
-    color: "#FFF9E6", // Soft Yellow
-    emoji: "☕"
-  },
-  {
-    id: 5,
-    name: "Sanur Scuba Diving",
-    category: "PADI Course & Guide Booking",
-    status: "In Development",
-    isLive: false,
-    color: "#E1F5FE", // Soft Sky Blue
-    emoji: "🤿"
-  },
-  {
-    id: 6,
-    name: "Bali Premium Cruiser",
-    category: "Yacht & Boat Charter",
-    status: "In Development",
-    isLive: false,
     color: "#F1F8E9", // Soft Lime
-    emoji: "⛵"
+    emoji: "☕"
   }
 ];
 
@@ -69,9 +71,9 @@ const Portfolio = () => {
         
         <div className="section-header text-center">
           <span className="subtitle">Showcase Portfolio</span>
-          <h2 className="title">Upcoming Project Showcases</h2>
+          <h2 className="title">Client Project Showcases</h2>
           <p className="description">
-            Explore our pipeline of premium digital products. We build custom-crafted, conversion-optimized websites specifically engineered for Bali's finest local brands.
+            Explore our collection of high-converting, premium digital products. Click any live demo to experience the pixel-perfect design, Google Calendar syncs, and interactive booking flows.
           </p>
         </div>
 
