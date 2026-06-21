@@ -41,13 +41,13 @@ const Hero = () => {
           {/* Linktree style Domain Bar */}
           <form className="hero-domain-form" onSubmit={handleStartTrial}>
             <div className="domain-input-wrapper">
-              <span className="domain-prefix">kriya.web.id/</span>
               <input
                 type="text"
                 placeholder="yourbusiness"
                 value={businessName}
                 onChange={(e) => setBusinessName(e.target.value.toLowerCase().replace(/[^a-z0-9-]/g, ''))}
               />
+              <span className="domain-suffix">.kriya.web.id</span>
             </div>
             <button type="submit" className="btn btn-primary hero-submit">
               Claim 14-Day Free Trial
@@ -78,7 +78,7 @@ const Hero = () => {
 
                 <a href="#portfolio" className="phone-link-btn highlight-link">
                   <span className="link-icon">📈</span>
-                  <span className="link-title">View Before & After Showcase</span>
+                  <span className="link-title">Explore Template Showcase</span>
                 </a>
 
                 <a href="#trial" className="phone-link-btn">

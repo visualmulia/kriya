@@ -26,7 +26,7 @@ const TrialForm = () => {
     }
 
     // Kriya Studio WhatsApp Contact Number
-    const studioWA = '62881037342111';
+    const studioWA = '6281289653355';
 
     // Format WhatsApp message
     const msg = `Hello Kriya Web Studio ⚡

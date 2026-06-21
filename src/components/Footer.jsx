@@ -49,11 +49,11 @@ const Footer = () => {
             <p className="contact-desc">Have questions or want to discuss a custom design project? Get in touch:</p>
             
             <div className="contact-items">
-              <a href="https://wa.me/62881037342111" target="_blank" rel="noopener noreferrer" className="contact-item">
+              <a href="https://wa.me/6281289653355" target="_blank" rel="noopener noreferrer" className="contact-item">
                 <span className="contact-icon">💬</span>
                 <div className="contact-info">
                   <h4>WhatsApp (24/7)</h4>
-                  <p>+62 881-0373-42111</p>
+                  <p>+62 812-8965-3355</p>
                 </div>
               </a>
               
