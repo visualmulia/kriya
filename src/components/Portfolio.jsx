@@ -30,7 +30,7 @@ const showcaseProjects = [
     isLive: true,
     color: "#E1F5FE", // Soft Sky Blue
     emoji: "🚗",
-    link: "https://balidriver-omega.vercel.app"
+    link: "https://balidriver.kriya.web.id"
   },
   {
     id: 4,
